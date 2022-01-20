@@ -25,6 +25,7 @@ html {
   }
 
 
+
 body {
 
     
@@ -42,14 +43,7 @@ body {
     
 }
 
-.wrapper {
 
-    padding-left: 5%;
-    padding-right: 5%;
-    background-color: #1F2937;
-   
-    
-}
 
 
 
@@ -71,6 +65,7 @@ header {
     display: flex;
     text-align: center;
     margin-bottom: 6em;
+    padding: 0 11%;
 
 
 }
@@ -234,7 +229,7 @@ div.gallery {
     font-weight: extra-bold ;
     color: #1F2937;
     flex-wrap: wrap;
-    padding: 8% 25% ;
+    padding: 8% 20% ;
 
 }
 
@@ -244,6 +239,7 @@ div.gallery {
     font-style: italic;
     font-weight: lighter;
     font-stretch: normal ;
+    text-align: justify;
     
     
     
@@ -251,6 +247,7 @@ div.gallery {
 
 .quote-author {
     text-align: end;
+    font-weight: bold;
 }
 
 .prefooter {
@@ -266,7 +263,7 @@ div.gallery {
 
 .container {
 
-   display: inline-block;
+    display: inline-block;
     background-color: #3882F6 ;
     color: white;
     
@@ -274,22 +271,50 @@ div.gallery {
     width: 70% ; 
     border-radius: 5px;
     display: flex;
-}     
+    justify-content: space-around;
+    align-items: center;
+}   
 
-.cta-button a  {
+.cta-text {
+    text-align: left;
+    max-width: 50%;
     
+}
+
+.cta-text p  {
+    font-weight: lighter;
+}   
+
+ a.cta-button {
+    
+   
     display: inline-block;
+    text-decoration:none;
+    color: white;
+    padding: 10px 40px;
+    
+    text-align: center;
+    
+
+
+   
+    background-color: #3882F6;
+    
+    
+    border: 2px solid white;
+    border-radius: 10px;
     
 
 }   
 
 footer {
 
-    height: 6.125em;
+    padding: 2% 40%;
     text-align: center;
     color: white;
     background-color: #1F2937;
-    /* width: 50em; */
+    
     margin: 0 auto;
     font-size: 0.8em;
+    font-weight: lighter;
 }
