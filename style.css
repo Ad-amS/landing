@@ -1,42 +1,72 @@
 *{
-    border: 1px solid red;
-    
-} 
+    /* border: 1px solid red;*/
+    /* general */
+
+}
+html {
+    -webkit-box-sizing: border-box;
+           box-sizing: border-box;
+  }
+  
+  *, *:before, *:after {
+    -webkit-box-sizing: inherit;
+            box-sizing: inherit;
+  }
+  
+  /* clearfix */
+  .group:before,
+  .group:after {
+    content: " ";
+    display: table;
+  }
+  
+  .group:after {
+    clear: both;
+  }
+
+
 body {
 
     
 
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     
+    font-size: 1em;
+
     
 
-    margin: 0 auto;
+    
 
-    text-align: center;
+    
     
     
 }
 
 .wrapper {
 
-    padding-left: 12.5rem;
-    padding-right: 12.5rem;
-    max-width: 50rem;
+    padding-left: 5%;
+    padding-right: 5%;
+    background-color: #1F2937;
+   
     
 }
+
+
 
 header {
     
     background-color: #1F2937;
     color: #E5E7EB;
     
-    height: 33.6875em;
+    
     margin: 0 auto;
 
 }
 
+
+/* Navigacia a logo*/
 .navbar {
-    height: 3.9375rem;
+    
     
     display: flex;
     text-align: center;
@@ -57,29 +87,54 @@ header {
     
     list-style: none;
     text-decoration: none;
-    font-weight: 100;
+   font-weight: lighter;
     justify-content: flex-end;
 
+    gap: 0.8em;
+    
+
 }
 
-.navbar ul.li {
-    flex: 1;
-    gap: .5rem;
+.navbar li {
+    
+    margin-top: .315rem;
+    
+}
+
+.navbar a {
+    text-decoration: none;
+    color: white;
+
+    
 }
 
 
+
+
+/*Uvodna cast Landing page*/
 main {
-    height: 29.75em;
-    /* width: 50em; */
+    padding-bottom: 5em;
+    
+    
     display: flex;
     justify-content: space-around;
 
+    height: fit-content;
+
+
+    
+
+}
+
+main h1 {
+    font-size: 42px;
+    font-weight: extra-bold;
 }
 
 .hp1 {
 
-    width: 14.75rem;
-    height: 15rem;
+    width: 30% ;
+    height: 0 auto;
 
 }
 
@@ -88,45 +143,114 @@ main {
     background-repeat: no-repeat;
     background-position: center;
     width: 14.75rem;
-    height: 15rem;
+    height: auto;
     
 }
 
 
 
-header a {
+main a {
 
 
 
     text-decoration:none;
     color: #E5E7EB;
-    font-size: 1.125rem;
+    font-size: 1.125em;
 
+    display: inline-block;
+    background-color: #3882F6;
+    padding: .375rem 2rem;
+    border-radius: 10px;
+    
+
+    
    
 
 
 }
 
-section {
+div.gallery {
+
+    padding-top: 1em;
  
     background-color: white ;
-    height: 31.25rem;
-    /* width: 50rem; */
+    
     margin: 0 auto;
     text-align: center;
-    font-size: 2.25rem;
+    font-size: 1.8em;
     font-weight: extra-bold;
+    color: #1F2937;
+    padding-left: 1.5625rem;
+    padding-right: 1.5625rem;
+    
+    
+}
+
+.employees {
+    display: flex;
+    
+    padding-bottom: 3em;
+    justify-content: center;
+    
+
+    gap: 1.3125rem;
+    
+
+}
+
+.rectangle {
+    display: block;
+    border: #3882F6 3px solid;
+    height: 7em;
+    max-height: 160px;
+    border-radius: .625rem;
+    
+    max-width:  160px; 
+    
+}
+
+.person {
+    flex: 4;
+    font-size: 1rem;
+    max-width:  130px; 
+    min-width: 4rem;
+
+}
+
+.person p {
+    font-size: 0.8em ;
+    font-weight: lighter;
+    
     color: #1F2937;
 }
 
 
 .quote {
     background-color: #E5E7EB;
-    height: 26.625rem;
+    
+    
+    
 
     font-weight: extra-bold ;
     color: #1F2937;
     flex-wrap: wrap;
+    padding: 8% 25% ;
+
+}
+
+.quote-text {
+
+    font-size: 1.5em;
+    font-style: italic;
+    font-weight: lighter;
+    font-stretch: normal ;
+    
+    
+    
+}
+
+.quote-author {
+    text-align: end;
 }
 
 .prefooter {
@@ -134,18 +258,30 @@ section {
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-basis: 100%;
+    
+    background-color: white;
+    
 }
 
-.cta-container {
+
+.container {
+
+   display: inline-block;
     background-color: #3882F6 ;
-    /* width: 50rem; */
-    height: 8.75rem;
+    color: white;
+    
+    height: 9.3125rem; 
+    width: 70% ; 
+    border-radius: 5px;
+    display: flex;
+}     
+
+.cta-button a  {
+    
+    display: inline-block;
     
 
-
-
-}
+}   
 
 footer {
 
@@ -155,5 +291,5 @@ footer {
     background-color: #1F2937;
     /* width: 50em; */
     margin: 0 auto;
-    font-size: 0.5em;
+    font-size: 0.8em;
 }
