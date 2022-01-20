@@ -1,0 +1,159 @@
+*{
+    border: 1px solid red;
+    
+} 
+body {
+
+    
+
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    
+    
+
+    margin: 0 auto;
+
+    text-align: center;
+    
+    
+}
+
+.wrapper {
+
+    padding-left: 12.5rem;
+    padding-right: 12.5rem;
+    max-width: 50rem;
+    
+}
+
+header {
+    
+    background-color: #1F2937;
+    color: #E5E7EB;
+    
+    height: 33.6875em;
+    margin: 0 auto;
+
+}
+
+.navbar {
+    height: 3.9375rem;
+    
+    display: flex;
+    text-align: center;
+    margin-bottom: 6em;
+
+
+}
+
+.navbar h1 {
+    font-size: 1.5em;
+    color: #F9FAF8;
+    flex-shrink: 0;
+
+}
+.navbar ul {
+    display: flex;
+    flex-basis: 100%;
+    
+    list-style: none;
+    text-decoration: none;
+    font-weight: 100;
+    justify-content: flex-end;
+
+}
+
+.navbar ul.li {
+    flex: 1;
+    gap: .5rem;
+}
+
+
+main {
+    height: 29.75em;
+    /* width: 50em; */
+    display: flex;
+    justify-content: space-around;
+
+}
+
+.hp1 {
+
+    width: 14.75rem;
+    height: 15rem;
+
+}
+
+.hp2  {
+    background-image: url(./images/blogging.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 14.75rem;
+    height: 15rem;
+    
+}
+
+
+
+header a {
+
+
+
+    text-decoration:none;
+    color: #E5E7EB;
+    font-size: 1.125rem;
+
+   
+
+
+}
+
+section {
+ 
+    background-color: white ;
+    height: 31.25rem;
+    /* width: 50rem; */
+    margin: 0 auto;
+    text-align: center;
+    font-size: 2.25rem;
+    font-weight: extra-bold;
+    color: #1F2937;
+}
+
+
+.quote {
+    background-color: #E5E7EB;
+    height: 26.625rem;
+
+    font-weight: extra-bold ;
+    color: #1F2937;
+    flex-wrap: wrap;
+}
+
+.prefooter {
+    height: 21.75rem ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-basis: 100%;
+}
+
+.cta-container {
+    background-color: #3882F6 ;
+    /* width: 50rem; */
+    height: 8.75rem;
+    
+
+
+
+}
+
+footer {
+
+    height: 6.125em;
+    text-align: center;
+    color: white;
+    background-color: #1F2937;
+    /* width: 50em; */
+    margin: 0 auto;
+    font-size: 0.5em;
+}
