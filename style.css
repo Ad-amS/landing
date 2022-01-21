@@ -1,8 +1,4 @@
-*{
-    /* border: 1px solid red;*/
-    /* general */
 
-}
 html {
     -webkit-box-sizing: border-box;
            box-sizing: border-box;
@@ -134,7 +130,7 @@ main h1 {
 }
 
 .hp2  {
-    background-image: url(./images/blogging.svg);
+    background-image: url(./images/blogging.png);
     background-repeat: no-repeat;
     background-position: center;
     width: 14.75rem;
